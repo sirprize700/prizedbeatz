@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PRIZED Productions | Beats by SirPrize700</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #090909;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at center, #29120f 0%, #111 45%, #050505 100%);
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .brand {
+      color: #c62828;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 6px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 9vw, 7rem);
+      line-height: .95;
+      letter-spacing: -3px;
+    }
+
+    .gold {
+      color: #d4a64a;
+    }
+
+    .tagline {
+      margin: 25px auto;
+      max-width: 650px;
+      color: #c9c9c9;
+      font-size: 1.2rem;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: .2s;
+    }
+
+    .primary {
+      background: #b71c1c;
+      color: white;
+    }
+
+    .secondary {
+      border: 1px solid #d4a64a;
+      color: #d4a64a;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .beats {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .beats h2 {
+      font-size: 2.3rem;
+      margin-bottom: 15px;
+    }
+
+    .beats p {
+      color: #999;
+    }
+
+    footer {
+      border-top: 1px solid #222;
+      padding: 30px 20px;
+      text-align: center;
+      color: #777;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero {
+        min-height: 80vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="brand">PRIZED PRODUCTIONS</div>
+
+      <h1>
+        SOULFUL.<br>
+        SAMPLE-BASED.<br>
+        <span class="gold">HIP-HOP.</span>
+      </h1>
+
+      <p class="tagline">
+        Original boom bap, soul and jazz-inspired instrumentals
+        produced by SirPrize700.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="#beats">Listen to the Beats</a>
+        <a class="button secondary"
+           href="https://www.youtube.com/@sirprize700"
+           target="_blank">
+          YouTube
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="beats" id="beats">
+    <h2>Latest Beats</h2>
+
+    <p>
+      Bad Rhymes • Alright (You Make It Hot) • Already in Space •
+      The Joker • Tabernacle
+    </p>
+  </section>
+
+  <footer>
+    © 2026 PRIZED Productions · Beats by SirPrize700
+  </footer>
+
+</body>
+</html>
