@@ -149,7 +149,91 @@
       border-radius: 3px;
       color: #ddd;
     }
+.beat-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 10px auto 30px;
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+}
 
+.beat-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+  display: block;
+}
+
+.beat-info {
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.beat-type {
+  color: #d6a847;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beat-info h3 {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.beat-info p {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.beat-button {
+  align-self: flex-start;
+  background: #b51e23;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+
+.beat-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  .beat-card {
+    grid-template-columns: 1fr;
+  }
+
+  .beat-card img {
+    min-height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .beat-info {
+    padding: 25px;
+  }
+
+  .beat-info h3 {
+    font-size: 1.8rem;
+  }
+}
     /* FOOTER */
 
     footer {
@@ -233,7 +317,35 @@
 
       <div class="beat-list">
 
-        <div class="beat">Bad Rhymes</div>
+        <div class="beat-card">
+
+  <img
+    src="file_00000000da3c81f7ac205d71dd7c114f.png"
+    alt="Bad Rhymes by PRIZED Productions">
+
+  <div class="beat-info">
+
+    <span class="beat-type">
+      Soulful • Sample-Based • Boom Bap
+    </span>
+
+    <h3>Bad Rhymes</h3>
+
+    <p>
+      Bluesy soul, chopped samples and boom bap drums.
+      Produced by SirPrize700.
+    </p>
+
+    <a
+      class="beat-button"
+      href="#"
+      target="_blank">
+      Listen on YouTube
+    </a>
+
+  </div>
+
+</div>
 
         <div class="beat">Alright (You Make It Hot)</div>
 
