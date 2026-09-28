@@ -159,6 +159,11 @@
   flex-direction: column;
   height: 100%;
 }
+    .beat-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  width: calc(50% - 12px);
+  justify-self: center;
+}
 
 .beat-card img {
   width: 100%;
@@ -216,6 +221,10 @@
  .beat-list {
   grid-template-columns: 1fr;
   gap: 20px;
+}
+  .beat-card:last-child:nth-child(odd) {
+  grid-column: auto;
+  width: 100%;
 }
 
   .beat-info {
