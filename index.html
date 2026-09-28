@@ -13,115 +13,166 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      background: #090909;
+      background: #080808;
       color: #f5f5f5;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
     }
 
+    /* HERO BANNER */
+
     .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 100%;
+      background: #000;
+    }
+
+    .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* INTRO */
+
+    .intro {
       text-align: center;
-      padding: 40px 20px;
+      padding: 55px 20px 70px;
       background:
-        radial-gradient(circle at center, #29120f 0%, #111 45%, #050505 100%);
+        radial-gradient(circle at top, #181818 0%, #090909 55%, #050505 100%);
     }
 
-    .hero-content {
-      max-width: 900px;
-    }
-
-    .brand {
-      color: #c62828;
-      font-size: 1rem;
+    .eyebrow {
+      color: #d6a847;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 0.8rem;
       font-weight: bold;
-      letter-spacing: 6px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
-    h1 {
-      font-size: clamp(3rem, 9vw, 7rem);
-      line-height: .95;
-      letter-spacing: -3px;
+    .intro h1 {
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 1.1;
+      margin-bottom: 18px;
     }
 
-    .gold {
-      color: #d4a64a;
-    }
-
-    .tagline {
-      margin: 25px auto;
+    .intro p {
+      color: #bcbcbc;
       max-width: 650px;
-      color: #c9c9c9;
-      font-size: 1.2rem;
+      margin: 0 auto;
+      font-size: 1.1rem;
     }
+
+    /* BUTTONS */
 
     .buttons {
-      margin-top: 35px;
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 14px;
       flex-wrap: wrap;
+      margin-top: 32px;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 28px;
+      padding: 14px 26px;
       text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
       font-weight: bold;
-      border-radius: 4px;
-      transition: .2s;
+      border-radius: 3px;
+      transition: 0.2s ease;
     }
 
     .primary {
-      background: #b71c1c;
-      color: white;
+      background: #b51e23;
+      color: #fff;
+      border: 1px solid #b51e23;
     }
 
     .secondary {
-      border: 1px solid #d4a64a;
-      color: #d4a64a;
+      color: #d6a847;
+      border: 1px solid #d6a847;
     }
 
     .button:hover {
       transform: translateY(-2px);
+      opacity: 0.9;
     }
 
+    /* BEATS */
+
     .beats {
-      padding: 80px 20px;
       max-width: 1100px;
       margin: auto;
+      padding: 75px 20px;
       text-align: center;
+    }
+
+    .section-label {
+      color: #b51e23;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 0.75rem;
+      font-weight: bold;
     }
 
     .beats h2 {
-      font-size: 2.3rem;
-      margin-bottom: 15px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin: 8px 0 15px;
     }
 
-    .beats p {
+    .beats-description {
       color: #999;
+      max-width: 650px;
+      margin: auto;
     }
+
+    .beat-list {
+      margin-top: 38px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .beat {
+      border: 1px solid #292929;
+      background: #111;
+      padding: 13px 18px;
+      border-radius: 3px;
+      color: #ddd;
+    }
+
+    /* FOOTER */
 
     footer {
       border-top: 1px solid #222;
-      padding: 30px 20px;
+      padding: 35px 20px;
       text-align: center;
       color: #777;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        letter-spacing: -1px;
+    @media (max-width: 700px) {
+      .hero {
+        overflow: hidden;
       }
 
-      .hero {
-        min-height: 80vh;
+      .hero img {
+        width: 140%;
+        max-width: none;
+        margin-left: -20%;
+      }
+
+      .intro {
+        padding-top: 45px;
       }
     }
   </style>
@@ -129,42 +180,75 @@
 
 <body>
 
-  <section class="hero">
-    <div class="hero-content">
+  <header class="hero">
+    <img
+      src="file_00000000e794820cad5eec1ae7c89e25.png"
+      alt="PRIZED Productions - Beats by SirPrize">
+  </header>
 
-      <div class="brand">PRIZED PRODUCTIONS</div>
+  <main>
+
+    <section class="intro">
+
+      <div class="eyebrow">Beats by SirPrize700</div>
 
       <h1>
-        SOULFUL.<br>
-        SAMPLE-BASED.<br>
-        <span class="gold">HIP-HOP.</span>
+        Soulful • Sample-Based • Boom Bap
       </h1>
 
-      <p class="tagline">
-        Original boom bap, soul and jazz-inspired instrumentals
-        produced by SirPrize700.
+      <p>
+        Original hip-hop instrumentals rooted in soul, jazz and
+        whatever else sounds good.
       </p>
 
       <div class="buttons">
-        <a class="button primary" href="#beats">Listen to the Beats</a>
-        <a class="button secondary"
-           href="https://www.youtube.com/@sirprize700"
-           target="_blank">
+
+        <a class="button primary" href="#beats">
+          Listen to the Beats
+        </a>
+
+        <a
+          class="button secondary"
+          href="https://www.youtube.com/@sirprize700"
+          target="_blank"
+          rel="noopener">
           YouTube
         </a>
+
       </div>
 
-    </div>
-  </section>
+    </section>
 
-  <section class="beats" id="beats">
-    <h2>Latest Beats</h2>
 
-    <p>
-      Bad Rhymes • Alright (You Make It Hot) • Already in Space •
-      The Joker • Tabernacle
-    </p>
-  </section>
+    <section class="beats" id="beats">
+
+      <div class="section-label">PRIZED Productions</div>
+
+      <h2>Latest Beats</h2>
+
+      <p class="beats-description">
+        A growing collection of original instrumentals produced by
+        SirPrize700.
+      </p>
+
+      <div class="beat-list">
+
+        <div class="beat">Bad Rhymes</div>
+
+        <div class="beat">Alright (You Make It Hot)</div>
+
+        <div class="beat">Already in Space</div>
+
+        <div class="beat">The Joker</div>
+
+        <div class="beat">Tabernacle</div>
+
+      </div>
+
+    </section>
+
+  </main>
+
 
   <footer>
     © 2026 PRIZED Productions · Beats by SirPrize700
